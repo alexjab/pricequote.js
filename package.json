@@ -4,7 +4,7 @@
   "description": "A price quote library",
   "main": "index.js",
   "scripts": {
-    "lint": "standard .",
+    "lint": "standard --verbose | snazzy",
     "unit": "mocha ./test",
     "test": "npm run lint && npm run unit",
     "cover": "npm run lint && nyc --reporter=text --reporter=lcov npm run test"
@@ -16,10 +16,17 @@
     "dirty-chai": "^2.0.0",
     "mocha": "^3.4.2",
     "nyc": "^11.0.2",
+    "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   },
   "dependencies": {
     "decimal.js": "^7.2.1",
-    "lodash": "^4.17.4"
+    "intl": "^1.2.5"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
   }
 }
