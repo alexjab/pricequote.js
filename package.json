@@ -1,0 +1,25 @@
+{
+  "name": "pricequote",
+  "version": "1.0.0",
+  "description": "A price quote library",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard .",
+    "unit": "mocha ./test",
+    "test": "npm run lint && npm run unit",
+    "cover": "npm run lint && nyc --reporter=text --reporter=lcov npm run test"
+  },
+  "author": "alex@jablon.me",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "dirty-chai": "^2.0.0",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.2",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "decimal.js": "^7.2.1",
+    "lodash": "^4.17.4"
+  }
+}
